@@ -50,6 +50,6 @@ public class MyStepdefs {
     @Then("Compare results with the page")
     public void compareResultsWithThePage() {
 
-        new API_Page().getValues();
+        new API_Page().check();
     }
 }
