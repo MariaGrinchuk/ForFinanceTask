@@ -26,7 +26,7 @@ public class API_Page extends BasePage {
     List<WebElement> tableList = Driver.get().findElements(By.xpath("//body/div[2]/div[1]/div[1]/div[2]/div[1]/poll-question-results[1]/table[1]"));
     List<String> allTableElements = new ArrayList<>();
 
-    String mostVotedValueText = Driver.get().findElement(By.xpath("//tbody/tr[3]/th[1]/span[1]")).getText();
+    protected  String mostVotedValueText = Driver.get().findElement(By.xpath("//tbody/tr[3]/th[1]/span[1]")).getText();
     String numv = "numvotes=22";
     String topNumvText = "Moderate in-game text - needs crib sheet or paste ups";
 
